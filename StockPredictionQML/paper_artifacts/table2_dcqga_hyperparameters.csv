@@ -1,0 +1,9 @@
+Hyperparameter,Reference paper,Extended implementation
+Population size (m),50,30
+Mutation probability,0.1,0.1
+Initial step length (theta0),0.01*pi,0.01*pi
+Quantum bits (n),3,3
+Max iterations,100,100
+Convergence window,N/A,3
+Relative tolerance,N/A,1e-4
+Fitness subset per eval,Full,Up to 256
