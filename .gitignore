@@ -32,3 +32,7 @@ Thumbs.db
 *.fdb_latexmk
 *.synctex.gz
 
+# Local research/paper artifacts (implementation-only public repo)
+Extracted/
+StockPredictionQML/paper_artifacts/
+
