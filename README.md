@@ -44,6 +44,10 @@ This project performs a rigorous reproduction and extension across six real-worl
 │  ├─ qenn_gap_table.csv          # Gap analysis table (Table 4)
 │  ├─ *.png                       # Result charts
 │  └─ paper_artifacts/            # Local manuscript artifacts (not tracked)
+├─ ResearchDashboard/             # React dashboard for comparative visualization
+│  ├─ src/data/experimentData.ts  # Local experiment metrics + protocol controls
+│  ├─ src/App.tsx                 # Panels/charts/tables and metric derivations
+│  └─ README.md                   # Dashboard-specific usage and data provenance
 └─ README.md
 ```
 
@@ -142,6 +146,29 @@ Smoke test validates:
 2. Loss curves decrease over epochs.
 3. DCQGA rates stay in bounds.
 4. Q# interop/fallback returns amplitude-equivalent signal.
+
+---
+
+## 7) Research Dashboard (React)
+
+`ResearchDashboard/` provides an interactive, local-data-only dashboard for fair comparative analysis across ENN and QENN variants.
+
+Key dashboard surfaces include:
+- Mean NMSE and derived RMSE comparisons
+- Standard deviation analysis and dedicated std table
+- Quantum gap vs paper baseline
+- Runtime profile (representative)
+- Heatmap/radar trend views
+- Sortable comparison tables with CV and confidence intervals
+- Fair-comparison protocol controls
+
+Run locally:
+
+```powershell
+cd ResearchDashboard
+npm install
+npm run dev
+```
 
 ---
 
